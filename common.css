@@ -1,0 +1,15 @@
+/** 
+ * 这是最初的common.css版本,用这个做静态页面没有问题,
+ * 但是做phpcms的话，会出现问题，因为*表示全部，影响太多，很容易
+ * 出现问题
+ *
+ */
+/* 公共部分*/
+*{margin:0;padding:0;}
+body{background:#000;font-family:微软雅黑;}
+li{list-style-type:none;}
+img{border:0;}
+.fl{float:left;}
+.fr{float:right;}
+.cle{clear:both;}
+/* 公共部分*/
