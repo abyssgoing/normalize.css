@@ -8,7 +8,7 @@ body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd{margin:0px;padding:0px;}
  这是最初的common.css版本,用这个做静态页面没有问题,
  但是做phpcms的话，会出现问题，因为*表示全部，影响太多，很容易
  出现问题,所以想针对某些元素写margin:0px;padding:0px;
- body  有的浏览器有默认的margin和padding,有的没有.
+ body  有的浏览器默认有margin和padding,有的没有.
 
 ------------------------------ */
 body{font:12px "宋体","微软雅黑" ;line-height: 22px;}
@@ -59,7 +59,7 @@ img,input{border:0px;}
     * html .clr{  
         zoom:1;  
     } 
-    这样写了，但是如果子元素只有一个浮动元素的话就不能去除浮动。
+    这样写了，但是如果子元素只有一个浮动元素的话就不能去除浮动。  
 ------------------------------ */ 
 
 .mart10{margin-top:10px;}
