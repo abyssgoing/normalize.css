@@ -78,3 +78,14 @@ img,input{border:0px;}
 .box{width:982px;margin:0 auto;}
 a,a:visited{color:#333;text-decoration: none;}
 a:hover{text-decoration: underline;}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+/* 
+------------------------------ 
+  @1
+  outline:none;
+  去掉IE8和firefox点击时的虚线框.
+  blr:expression(this.onFocus=this.blur());
+  去掉IE6和IE7的点击时的虚线框
+
+------------------------------ */
+area{outline:none;}
