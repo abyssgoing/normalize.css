@@ -13,8 +13,7 @@ img,input{border:0px;}
 .clr{  
     zoom:1;  
 } 
-a{outline:none;blr:expression(this.onFocus=this.blur());}
-area{outline:none;}
+a,area{outline:none;}
 /* reset*/
 
 
