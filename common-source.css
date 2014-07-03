@@ -57,7 +57,7 @@ img,input{border:0px;}
     } 
     这样写了，但是如果子元素只有一个浮动元素的话就不能去除浮动。  
 ------------------------------ */ 
-a{outline:none;blr:expression(this.onFocus=this.blur());}
+a{outline:none;}
 /* 
 ------------------------------ 
   @1
@@ -65,6 +65,9 @@ a{outline:none;blr:expression(this.onFocus=this.blur());}
   去掉IE8和firefox点击时的虚线框.
   blr:expression(this.onFocus=this.blur());
   去掉IE6和IE7的点击时的虚线框
+  @2
+  去掉blr:expression(this.onFocus=this.blur());
+  因为他很占资源
 
 ------------------------------ */
 area{outline:none;}
