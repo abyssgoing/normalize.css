@@ -1,19 +1,21 @@
 /* reset*/
-body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd{margin:0px;padding:0px;}
+body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p{margin:0px;padding:0px;}
 li{list-style-type:none;}
 img,input{border:0px;}
-/* 清除浮动*/
-.clr:after{  
-    content:"";  
-    height:0px;  
-    visibility:hidden;  
-    display:block;  
-    clear:both;  
-}    
-.clr{  
-    zoom:1;  
-} 
-a,area{outline:none;}
+	/* 清除浮动*/
+	.clr:after{  
+	    content:"";  
+	    height:0px;  
+	    visibility:hidden;  
+	    display:block;  
+	    clear:both;  
+	}    
+	.clr{  
+	    zoom:1;  
+	} 
+	/* 清除浮动*/
+a{outline:none;}
+area{outline:none;}
 h1,h2,h3,h4,h5,h6{font-weight: 500;}
 /* reset*/
 
@@ -41,3 +43,88 @@ body{font:12px "宋体","微软雅黑" ;line-height: 22px;}
 
 a,a:visited{color:#333;text-decoration: none;}
 a:hover{text-decoration: underline;}
+
+
+/*
+ *  公共头部
+ *****************************/
+    /*头部*/
+    .nav{}
+    /*头部*/
+
+/*
+ *  公共头部
+ *****************************/
+
+
+
+
+/*
+ *  公共底部
+ *****************************/
+
+
+/*
+ *  公共底部
+ *****************************/
+
+
+ /*
+ *  通用文字列表
+ *****************************/
+    .art-list{}
+    .art-list li{}
+/*
+ *  通用文字列表
+ *****************************/
+
+
+/*
+ *  浮动平铺
+ *****************************/
+     
+     
+ /*
+ *  浮动平铺
+ *****************************/
+
+
+ /*
+ *  通用透明变色
+ *****************************/
+.opacity{
+    position: relative;
+}
+a.opacity:hover{
+    text-decoration:none;
+}
+.opacity .bac,.opacity .txt{
+    display: block;
+    width:100%;
+    position:absolute;left:0px;bottom:0px;
+    height:28px;line-height: 28px;
+}
+.opacity .bac{
+    background: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.opacity .txt{
+    text-indent: 10px;
+    color:#fff;
+	cursor:pointer;
+}
+/*
+ *  通用透明变色
+ *****************************/
+
+ /*
+ *  幻灯片
+ *****************************/
+
+
+/*
+ *  幻灯片
+ *****************************/
+
+ 

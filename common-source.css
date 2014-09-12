@@ -1,5 +1,5 @@
 /* reset*/
-body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd{margin:0px;padding:0px;}
+body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p{margin:0px;padding:0px;}
 /* 
 ------------------------------ 
  @1 *{margin:0;padding:0;}
@@ -7,6 +7,7 @@ body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd{margin:0px;padding:0px;}
  但是做phpcms的话，会出现问题，因为*表示全部，影响太多，很容易
  出现问题,所以想针对某些元素写margin:0px;padding:0px;
  body  有的浏览器默认有margin和padding,有的没有.
+ @2 增加p这个元素,因为百度编辑器默认一行为P,编辑人员没法缩小P的间距
 
 ------------------------------ */
 li{list-style-type:none;}
@@ -102,3 +103,88 @@ body{font:12px "宋体","微软雅黑" ;line-height: 22px;}
 
 a,a:visited{color:#333;text-decoration: none;}
 a:hover{text-decoration: underline;}
+
+
+/*
+ *  公共头部
+ *****************************/
+    /*头部*/
+    .nav{}
+    /*头部*/
+
+/*
+ *  公共头部
+ *****************************/
+
+
+
+
+/*
+ *  公共底部
+ *****************************/
+
+
+/*
+ *  公共底部
+ *****************************/
+
+
+ /*
+ *  通用文字列表
+ *****************************/
+    .art-list{}
+    .art-list li{}
+/*
+ *  通用文字列表
+ *****************************/
+
+
+/*
+ *  浮动平铺
+ *****************************/
+     
+     
+ /*
+ *  浮动平铺
+ *****************************/
+
+
+ /*
+ *  通用透明变色
+ *****************************/
+.opacity{
+    position: relative;
+}
+a.opacity:hover{
+    text-decoration:none;
+}
+.opacity .bac,.opacity .txt{
+    display: block;
+    width:100%;
+    position:absolute;left:0px;bottom:0px;
+    height:28px;line-height: 28px;
+}
+.opacity .bac{
+    background: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.opacity .txt{
+    text-indent: 10px;
+    color:#fff;
+	cursor:pointer;
+}
+/*
+ *  通用透明变色
+ *****************************/
+
+ /*
+ *  幻灯片
+ *****************************/
+
+
+/*
+ *  幻灯片
+ *****************************/
+
+ 
