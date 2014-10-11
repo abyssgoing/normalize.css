@@ -1,5 +1,5 @@
 /* reset*/
-body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p{margin:0px;padding:0px;}
+body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p,input{margin:0px;padding:0px;}
 /* 
 ------------------------------ 
  @1 *{margin:0;padding:0;}
@@ -8,6 +8,7 @@ body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p{margin:0px;padding:0px;}
  出现问题,所以想针对某些元素写margin:0px;padding:0px;
  body  有的浏览器默认有margin和padding,有的没有.
  @2 增加p这个元素,因为百度编辑器默认一行为P,编辑人员没法缩小P的间距
+ @3 增加input这个元素,IE8的padding是padding:1px;而chrome上面是padding:1px 0px;
 
 ------------------------------ */
 li{list-style-type:none;}
@@ -132,8 +133,8 @@ a:hover{text-decoration: underline;}
  /*
  *  通用文字列表
  *****************************/
-    .art-list{}
-    .art-list li{}
+    .com-list{}
+    .com-list li{}
 /*
  *  通用文字列表
  *****************************/
