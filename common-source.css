@@ -81,7 +81,10 @@ h1,h2,h3,h4,h5,h6{font-weight: 500;}
 /* reset*/
 
 
-body{font:12px "宋体","微软雅黑" ;line-height: 22px;}
+body{font:12px arial,"宋体","微软雅黑" ;line-height: 22px;}
+/*font-family应该优先指定英文字体，然后再指定中文字体。否则，中文字体所包含的英文字母，会取代英文字体，这往往很丑陋。
+详情:http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html
+*/
 
 
 .box{width:982px;margin:0 auto;}
