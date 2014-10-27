@@ -133,7 +133,16 @@ a:hover{text-decoration: underline;}
 /* 通用文字列表
 ------------------------------ */
     .com-list{}
-    .com-list li{}
+    .com-list li{
+        height:24px;
+        line-height: 24px;
+        overflow:hidden;
+    }
+    .com-list li a,.com-list li a:visited{
+        display:block;
+        height:100%;
+        overflow:hidden;
+    }
 /* 通用文字列表
 ------------------------------ */
 
