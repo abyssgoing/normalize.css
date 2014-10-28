@@ -1,29 +1,27 @@
-/*  reset
------------------------------- */
+/* reset*/
 body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p,input{margin:0px;padding:0px;}
 li{list-style-type:none;}
 img,input{border:0px;}
-	/* 清除浮动*/
-	.clr:after{  
-	    content:"";  
-	    height:0px;  
-	    visibility:hidden;  
-	    display:block;  
-	    clear:both;  
-	}    
-	.clr{  
-	    zoom:1;  
-	} 
-	/* 清除浮动*/
+/* 清除浮动*/
+.clr:after{  
+    content:"";  
+    height:0px;  
+    visibility:hidden;  
+    display:block;  
+    clear:both;  
+}    
+.clr{  
+    zoom:1;  
+} 
 a{outline:none;}
 area{outline:none;}
 h1,h2,h3,h4,h5,h6{font-weight: 500;}
-/*  reset
------------------------------- */
+/* reset*/
 
-
-body{font:12px arial,"宋体","微软雅黑" ;line-height: 22px;}
-
+@hover-color:red;
+@yh:arial,'雅黑','宋体';
+@st:arial,"宋体","微软雅黑";
+body{font:12px @st;line-height: 22px;}
 
 .box{width:982px;margin:0 auto;}
 .mart10{margin-top:10px;}
@@ -70,19 +68,21 @@ a:hover{text-decoration: underline;}
 
 /* 通用文字列表
 ------------------------------ */
-    .com-list{}
-    .com-list li{
-        height:24px;
-        line-height: 24px;
-        overflow:hidden;
-    }
-    .com-list li a,.com-list li a:visited{
-        display:block;
-        height:100%;
-        overflow:hidden;
+    .com-list{
+    	li{
+    		height:24px;
+	        line-height: 24px;
+	        overflow:hidden;
+	        a,a:visited{
+	        	display:block;
+		        height:100%;
+		        overflow:hidden;
+	        }
+    	}
     }
 /* 通用文字列表
 ------------------------------ */
+
 
 
 /* 浮动平铺
@@ -97,25 +97,22 @@ a:hover{text-decoration: underline;}
 ----------------------------*/
 .opacity{
     position: relative;
-}
-a.opacity:hover{
-    text-decoration:none;
-}
-.opacity .bac,.opacity .txt{
-    display: block;
-    width:100%;
-    position:absolute;left:0px;bottom:0px;
-    height:28px;line-height: 28px;
-}
-.opacity .bac{
-    background: #000;
-    opacity: 0.5;
-    filter:alpha(opacity=50);
-}
-.opacity .txt{
-    text-indent: 10px;
-    color:#fff;
-	cursor:pointer;
+    .bac,.txt{
+    	display: block;
+	    width:100%;
+	    position:absolute;left:0px;bottom:0px;
+	    height:28px;line-height: 28px;
+    }
+    .bac{
+    	background: #000;
+	    opacity: 0.5;
+	    filter:alpha(opacity=50);
+    }
+    .txt{
+    	text-indent: 10px;
+	    color:#fff;
+	    cursor:pointer;
+    }
 }
 /*  通用透明变色
 ----------------------------*/
@@ -124,9 +121,6 @@ a.opacity:hover{
 /* 幻灯片
 ------------------------------ */
 
-
-
 /* 幻灯片
 ------------------------------ */
 
- 

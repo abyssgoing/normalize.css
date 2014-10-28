@@ -80,8 +80,10 @@ h1,h2,h3,h4,h5,h6{font-weight: 500;}
 ------------------------------ */
 /* reset*/
 
-
-body{font:12px arial,"宋体","微软雅黑" ;line-height: 22px;}
+@hover-color:red;
+@yh:arial,'雅黑','宋体';
+@st:arial,"宋体","微软雅黑";
+body{font:12px @st;line-height: 22px;}
 /*font-family应该优先指定英文字体，然后再指定中文字体。否则，中文字体所包含的英文字母，会取代英文字体，这往往很丑陋。
 详情:http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html
 */
@@ -132,16 +134,17 @@ a:hover{text-decoration: underline;}
 
 /* 通用文字列表
 ------------------------------ */
-    .com-list{}
-    .com-list li{
-        height:24px;
-        line-height: 24px;
-        overflow:hidden;
-    }
-    .com-list li a,.com-list li a:visited{
-        display:block;
-        height:100%;
-        overflow:hidden;
+    .com-list{
+    	li{
+    		height:24px;
+	        line-height: 24px;
+	        overflow:hidden;
+	        a,a:visited{
+	        	display:block;
+		        height:100%;
+		        overflow:hidden;
+	        }
+    	}
     }
 /* 通用文字列表
 ------------------------------ */
@@ -160,25 +163,22 @@ a:hover{text-decoration: underline;}
 ----------------------------*/
 .opacity{
     position: relative;
-}
-a.opacity:hover{
-    text-decoration:none;
-}
-.opacity .bac,.opacity .txt{
-    display: block;
-    width:100%;
-    position:absolute;left:0px;bottom:0px;
-    height:28px;line-height: 28px;
-}
-.opacity .bac{
-    background: #000;
-    opacity: 0.5;
-    filter:alpha(opacity=50);
-}
-.opacity .txt{
-    text-indent: 10px;
-    color:#fff;
-  cursor:pointer;
+    .bac,.txt{
+    	display: block;
+	    width:100%;
+	    position:absolute;left:0px;bottom:0px;
+	    height:28px;line-height: 28px;
+    }
+    .bac{
+    	background: #000;
+	    opacity: 0.5;
+	    filter:alpha(opacity=50);
+    }
+    .txt{
+    	text-indent: 10px;
+	    color:#fff;
+	    cursor:pointer;
+    }
 }
 /*  通用透明变色
 ----------------------------*/
@@ -186,8 +186,6 @@ a.opacity:hover{
 
 /* 幻灯片
 ------------------------------ */
-
-
 
 /* 幻灯片
 ------------------------------ */
