@@ -1,28 +1,19 @@
-/* reset*/
-body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p,input{margin:0px;padding:0px;}
-li{list-style-type:none;}
-img,input{border:0px;}
-/* 清除浮动*/
-.clr:after{  
-    content:"";  
-    height:0px;  
-    visibility:hidden;  
-    display:block;  
-    clear:both;  
-}    
-.clr{  
-    zoom:1;  
-} 
-a{outline:none;}
-area{outline:none;}
-h1,h2,h3,h4,h5,h6{font-weight: 500;}
-/* reset*/
-
 @hover-color:red;
-@yh:arial,'雅黑','宋体';
-@st:arial,"宋体","微软雅黑";
-body{font:12px @st;line-height: 22px;}
+@YaHei:'Microsoft YaHei', 'SimSun',arial,;
+@SimSum:'SimSun','Microsoft YaHei',arial;
+/* 
+------------------------------ 
+@1
+    font-family应该优先指定英文字体，然后再指定中文字体。否则，中文字体所包含的英文字母，会取代英文字体，这往往很丑陋。
+    详情:http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html
+@2
+    还是改成宋体有限,因为排版的时候，设计人员写标点符号和数字的时候给的是宋体，如果我们用@1的话，标点符号则会使arial.
+    ,所以这就导致了设计页面和排版页面不一样的视觉效果。
 
+------------------------------ */
+
+
+body{font:12px @SimSum;line-height: 22px;}
 .box{width:982px;margin:0 auto;}
 .mart10{margin-top:10px;}
 .marr10{margin-right:10px;}
@@ -69,16 +60,16 @@ a:hover{text-decoration: underline;}
 /* 通用文字列表
 ------------------------------ */
     .com-list{
-    	li{
-    		height:24px;
-	        line-height: 24px;
-	        overflow:hidden;
-	        a,a:visited{
-	        	display:block;
-		        height:100%;
-		        overflow:hidden;
-	        }
-    	}
+        li{
+            height:24px;
+            line-height: 24px;
+            overflow:hidden;
+            a,a:visited{
+                display:block;
+                height:100%;
+                overflow:hidden;
+            }
+        }
     }
 /* 通用文字列表
 ------------------------------ */
@@ -98,20 +89,20 @@ a:hover{text-decoration: underline;}
 .opacity{
     position: relative;
     .bac,.txt{
-    	display: block;
-	    width:100%;
-	    position:absolute;left:0px;bottom:0px;
-	    height:28px;line-height: 28px;
+        display: block;
+        width:100%;
+        position:absolute;left:0px;bottom:0px;
+        height:28px;line-height: 28px;
     }
     .bac{
-    	background: #000;
-	    opacity: 0.5;
-	    filter:alpha(opacity=50);
+        background: #000;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
     }
     .txt{
-    	text-indent: 10px;
-	    color:#fff;
-	    cursor:pointer;
+        text-indent: 10px;
+        color:#fff;
+        cursor:pointer;
     }
 }
 /*  通用透明变色
