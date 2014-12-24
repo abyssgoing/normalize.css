@@ -1,3 +1,8 @@
+body{overflow:visible;}
+/*  
+------------------------------ 
+  @q这个CSS可以去除IE6空页面也有的下拉条
+------------------------------ */
 body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd,p,input{margin:0px;padding:0px;}
 /* 
 ------------------------------ 
