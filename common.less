@@ -1,6 +1,7 @@
 @hover-color:red;
 @YaHei:'Microsoft YaHei', 'SimSun',arial,;
 @SimSum:'SimSun','Microsoft YaHei',arial;
+@arial:arial,'SimSun','Microsoft YaHei';
 /* 
 ------------------------------ 
 @1
@@ -90,18 +91,18 @@ a:hover{text-decoration: underline;}
 ----------------------------*/
 .opacity{
     position: relative;
-    .bac,.txt{
+    .background,.text{
         display: block;
         width:100%;
         position:absolute;left:0px;bottom:0px;
         height:28px;line-height: 28px;
     }
-    .bac{
+    .background{
         background: #000;
         opacity: 0.5;
         filter:alpha(opacity=50);
     }
-    .txt{
+    .text{
         text-indent: 10px;
         color:#fff;
         cursor:pointer;
